@@ -1,0 +1,19 @@
+<html>
+	<body>
+	<h1>Url shortner</h1>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.css') }}">
+	<script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+	<form action="" method="post" name="login"><tr>
+                {{ form.hidden_tag() }}
+	<p>
+                Url:<br>
+                {{ form.url(size=50) }}<br>
+        </p> 
+        <p><input type="submit" value="Submit"></p>
+	</form>
+	shorted url is<br>
+	{{e}}
+
+
+	</body>
+</html>
